@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "463997779686",
+    "firebase_url": "https://twitterdownload-9894c.firebaseio.com",
+    "project_id": "twitterdownload-9894c",
+    "storage_bucket": "twitterdownload-9894c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:463997779686:android:0fabb6bfd6a6c6a4",
+        "android_client_info": {
+          "package_name": "com.issa.twitterdownload"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "463997779686-fcfj0qmivlrkvjjh0g0bh18bqa8staqn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.issa.twitterdownload",
+            "certificate_hash": "46f5d5b989103025f850b77dad6d4971af3dfa2e"
+          }
+        },
+        {
+          "client_id": "463997779686-3qu1v7m5ejlvkpr0mj0t17bpncagtaq1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJkaWWzXz-Ik-FJgeN8UnnV_fkfCcU8MQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "463997779686-3qu1v7m5ejlvkpr0mj0t17bpncagtaq1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
