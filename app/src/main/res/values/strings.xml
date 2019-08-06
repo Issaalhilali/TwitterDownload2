@@ -22,4 +22,7 @@
     <string name="completed">Download Completed</string>
     <string name="check_notification">Download Started: Check Notification</string>
     <string name="kindly">Kindly grant the storage permission for TwittaSave and try again</string>
+    <string name="chek_connection">Request Failed: Check your internet connection</string>
+    <string name="fetch_video">Fetching video...</string>
+    <string name="fetch_gif">Fetching gif...</string>
 </resources>
