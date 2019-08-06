@@ -31,7 +31,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColorHint="@color/colorPrimary"
-            android:layout_marginBottom="16dp">
+            android:layout_marginBottom="2dp">
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
@@ -64,7 +64,7 @@
             android:text="@string/download_video"
             android:paddingLeft="16dp"
             android:paddingRight="16dp"
-            android:layout_margin="14dp"
+            android:layout_margin="10dp"
             android:textAllCaps="false"
             android:textColor="@color/colorPrimary"
             android:background="@drawable/btn_round2"

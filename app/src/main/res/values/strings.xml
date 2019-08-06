@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">TwitterDownload</string>
+    <string name="app_name">Download Videos Gif</string>
     <string name="tweet_url">Tweet Url</string>
     <string name="download_video">Download Video/Gif</string>
     <string name="filename_optional">Filename (Optional)</string>
@@ -14,4 +14,12 @@
     <string name="enable_disable_autolisten">Enable/Disable AutoListen</string>
     <string name="enable_autolisten_using_the_switch_below_the_download_button_from_the_twitter_app_simply_select_copy_link_to_tweet_option_from_the_tweet_containing_the_video_or_gif_twittasave_automatically_handles_the_download_of_the_video_or_animated_gif">Enable AutoListen using the Switch below the Download Button. From the Twitter app, simply select \'Copy link to tweet\' option from the tweet containing the video or gif. TwittaSave automatically handles the download of the video or animated gif.</string>
     <string name="general_channel">General Channel</string>
+    <string name="containt_tweet">The tweet contains no video or gif file</string>
+    <string name="tch">fetching Tweet</string>
+    <string name="not_tweet">Not a tweet url</string>
+    <string name="media_file">The tweet contains no media file</string>
+    <string name="requset_failed">Request Failed: Check your internet connection</string>
+    <string name="completed">Download Completed</string>
+    <string name="check_notification">Download Started: Check Notification</string>
+    <string name="kindly">Kindly grant the storage permission for TwittaSave and try again</string>
 </resources>
