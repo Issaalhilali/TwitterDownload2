@@ -32,7 +32,7 @@
     <string name="url_entered_media">The url entered contains no media file</string>
     <string name="enetrcorrent">Enter a correct tweet url</string>
     <string name="copy_tweet">Copy tweet URL to start downloading video or gif</string>
-    <string name="App_autolisten">TwittaSave AutoListen Running...</string>
-    <string name="autolist_enabl">TwittaSave AutoListen Enabled</string>
-    <string name="autolist_Disabled">TwittaSave AutoListen Disabled</string>
+    <string name="App_autolisten">App AutoListen Running...</string>
+    <string name="autolist_enabl">App AutoListen Enabled</string>
+    <string name="autolist_Disabled">App AutoListen Disabled</string>
 </resources>

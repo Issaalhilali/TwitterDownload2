@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Download Videos Gif</string>
+    <string name="app_name">تحميل فيديو و صور متحركة</string>
     <string name="tweet_url">رابط التغريدة</string>
     <string name="download_video">تحميل</string>
     <string name="filename_optional">تسمية الملف (أحتياري)</string>
-    <string name="tap_like">Show us some likes by tapping the \'LIKE\' Button.</string>
+    <string name="tap_like">أظهر لنا بعض الاعجاب من خلال النقر على زر الاعجاب.</string>
     <string name="hope_like">Hope you like it.</string>
     <string name="thank_you">شكرا لاستخدامك التطبيق</string>
     <string name="about_twittersave">معلومات حول التطبيق</string>
     <string name="about">يساعدك هذا التطبيق على تنزيل مقاطع الفيديو وصور GIF المتحركة من تغريدات إلى جهازك.</string>
     <string name="_1_copy_the_tweet_url">انسخ عنوان url الخاص بالتغريدة التي تحتوي على الفيديو أو صورة GIF المتحركة. ثم الصقه في مربع رابط. أدخل الاسم الذي تريد تخزينه به (اختياري). ثم اضغط على الزر "تنزيل". استمتع!!!</string>
     <string name="select_share">حدد الخيار "مشاركة تغريدة عبر ..." من خيارات تغريدة (محددة). ثم حدد التطبيق من قائمة التطبيقات (يتم إدراج رابط التغريدة  تلقائيًا في مربع رابط الرابط). أدخل الاسم الذي تريد تخزينه به (اختياري). ثم اضغط على الزر "تنزيل". استمتع!!!</string>
-    <string name="emmanuel_kehinde">Emmanuel Kehinde</string>
-    <string name="enable_disable_autolisten">Enable/Disable AutoListen</string>
+    <string name="emmanuel_kehinde">عيسى</string>
+    <string name="enable_disable_autolisten">تمكين/تعطيل تنزيل التلقائي</string>
     <string name="enable_autolisten"> تمكين الزر التلقائي باستخدام رمز التبديل الموجود أسفل زر التنزيل . ثم استخدم تطبيق تويتر ، حدد الخيار "نسخ الرابط التغريدة\" من تغريدة تحتوي على الفيديو أو gif. ويعالج التطبيق تلقائيًا تنزيل الفيديو أو صورة GIF المتحركة.</string>
     <string name="general_channel">القناة العامة</string>
     <string name="containt_tweet">لا تحتوي التغريدة على أي ملف فيديو أو ملف gif</string>
@@ -30,11 +30,12 @@
     <string name="problem">Report a problem</string>
     <string name="subject"> لتحميل الفيديوهات و الصور المتحركة من اتطيبق تويتر يمكن تحميل التطبيق
         و الاستمتاع</string>
-    <string name="url_entered">The url entered contains no video or gif file</string>
-    <string name="url_entered_media">The url entered contains no media file</string>
-    <string name="enetrcorrent">Enter a correct tweet url</string>
-    <string name="copy_tweet">Copy tweet URL to start downloading video or gif</string>
-    <string name="App_autolisten">TwittaSave AutoListen Running...</string>
-    <string name="autolist_enabl">TwittaSave AutoListen Enabled</string>
-    <string name="autolist_Disabled">TwittaSave AutoListen Disabled</string>
+    <string name="url_entered">لا يحتوي عنوان الرابط الذي تم ادخاله على ملف فيديو او ملف
+        gif</string>
+    <string name="url_entered_media">عنوان الرابط الذي تم ادخاله لا يحتوي على ملف وسائط</string>
+    <string name="enetrcorrent">أدخل عنوان الرابط الصحيح للتغريدة</string>
+    <string name="copy_tweet">انسخ رابط التغريدة لبدء التنزيل الفيديو او صور المتحركة gif</string>
+    <string name="App_autolisten">جاري التطبيق التلقائي</string>
+    <string name="autolist_enabl">تمكين التنزيل التلقائي</string>
+    <string name="autolist_Disabled">تعطيل التنزيل التلقائي</string>
 </resources>
