@@ -66,7 +66,7 @@
             android:textColor="#444"
             android:layout_marginTop="8dp"
             android:lineSpacingExtra="6dp"
-            android:text="@string/_1_copy_the_tweet_url_of_the_tweet_containing_the_video_or_animated_gif_then_paste_it_into_the_tweet_url_box_enter_the_name_you_want_it_stored_with_optional_then_tap_the_download_button_enjoy"/>
+            android:text="@string/_1_copy_the_tweet_url"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -86,7 +86,7 @@
             android:textColor="#444"
             android:layout_marginTop="8dp"
             android:lineSpacingExtra="6dp"
-            android:text="@string/enable_autolisten_using_the_switch_below_the_download_button_from_the_twitter_app_simply_select_copy_link_to_tweet_option_from_the_tweet_containing_the_video_or_gif_twittasave_automatically_handles_the_download_of_the_video_or_animated_gif"/>
+            android:text="@string/enable_autolisten"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -106,7 +106,7 @@
             android:textColor="#444"
             android:layout_marginTop="8dp"
             android:lineSpacingExtra="6dp"
-            android:text="@string/select_share_tweet_via_option_from_the_specific_tweet_options_then_select_twittersave_app_from_the_list_of_apps_the_tweet_url_is_automatically_inserted_into_the_tweet_url_box_enter_the_name_you_want_it_stored_with_optional_then_tap_the_download_button_enjoy"/>
+            android:text="@string/select_share"/>
 
         <TextView
             android:layout_width="wrap_content"

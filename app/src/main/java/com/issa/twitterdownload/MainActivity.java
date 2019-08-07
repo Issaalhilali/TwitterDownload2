@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
         TwitterAuthConfig authConfig = new TwitterAuthConfig(Constant.TWITTER_KEY, Constant.TWITTER_SECRET);
         Fabric.with(this, new Twitter(authConfig));
         setContentView(R.layout.activity_main);
-        sharedPreferences=this.getSharedPreferences("com.kehinde.twittasave", Context.MODE_PRIVATE);
+        sharedPreferences=this.getSharedPreferences("com.issa.twitterdownload", Context.MODE_PRIVATE);
 
         btn_download= findViewById(R.id.btn_download);
         txt_tweet_url= findViewById(R.id.txt_tweet_url);
@@ -278,16 +278,16 @@ public class MainActivity extends AppCompatActivity {
 
     private void alertNoVideo() {
         progressDialog.hide();
-        Toast.makeText(this, "The url entered contains no video or gif file", Toast.LENGTH_LONG).show();
+        Toast.makeText(this,getString(R.string.url_entered) , Toast.LENGTH_LONG).show();
     }
 
     private void alertNoMedia() {
         progressDialog.hide();
-        Toast.makeText(this, "The url entered contains no media file", Toast.LENGTH_LONG).show();
+        Toast.makeText(this,getString(R.string.url_entered_media), Toast.LENGTH_LONG).show();
     }
 
     private void alertNoUrl() {
-        Toast.makeText(MainActivity.this, "Enter a correct tweet url", Toast.LENGTH_LONG).show();
+        Toast.makeText(MainActivity.this,getString(R.string.enetrcorrent), Toast.LENGTH_LONG).show();
     }
 
 
@@ -350,9 +350,14 @@ public class MainActivity extends AppCompatActivity {
             startActivity(new Intent(this,AboutActivity.class));
         }
         if (item.getItemId()==R.id.web){
-            Intent urlIntent=new Intent(Intent.ACTION_VIEW, Uri.parse("https://twittasave.net"));
-            urlIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-            startActivity(urlIntent);
+
+            Intent share = new Intent();
+            share.setType("text/plain");
+            share.setAction(Intent.ACTION_SEND);
+            String appLink = "https://play.google.com/store/apps/details?id=com.issa.animeslyders";
+            share.putExtra(Intent.EXTRA_TEXT,getString(R.string.subject) + appLink);
+            startActivity(Intent.createChooser(share,"share via"));
+
         }
         return super.onOptionsItemSelected(item);
     }

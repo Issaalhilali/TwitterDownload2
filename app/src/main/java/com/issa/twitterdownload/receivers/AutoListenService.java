@@ -77,8 +77,8 @@ public class AutoListenService extends Service {
             vNotification = new Notification.Builder(context,GENERAL_CHANNEL)
                     .setSmallIcon(R.mipmap.ic_launcher)
                     .setLargeIcon(bitmap)
-                    .setContentTitle("TwittaSave AutoListen Running...")
-                    .setContentText("Copy tweet URL to start downloading video or gif")
+                    .setContentTitle(getString(R.string.App_autolisten))
+                    .setContentText(getString(R.string.copy_tweet))
                     .setContentIntent(openActivityPIntent)
                     .setAutoCancel(true)
                     .addAction(builder.build())
@@ -90,8 +90,8 @@ public class AutoListenService extends Service {
             vNotification = new Notification.Builder(context)
                     .setSmallIcon(R.mipmap.ic_launcher)
                     .setLargeIcon(bitmap)
-                    .setContentTitle("TwittaSave AutoListen Running...")
-                    .setContentText("Copy tweet URL to start downloading video or gif")
+                    .setContentTitle(getString(R.string.App_autolisten))
+                    .setContentText(getString(R.string.copy_tweet))
                     .setContentIntent(openActivityPIntent)
                     .setSound(Settings.System.DEFAULT_NOTIFICATION_URI)
                     .setAutoCancel(true)
@@ -105,8 +105,8 @@ public class AutoListenService extends Service {
             vNotification1 = new NotificationCompat.Builder(context)
                     .setSmallIcon(R.mipmap.ic_launcher)
                     .setLargeIcon(bitmap)
-                    .setContentTitle("TwittaSave AutoListen Running...")
-                    .setContentText("Copy tweet URL to start downloading video or gif")
+                    .setContentTitle(getString(R.string.App_autolisten))
+                    .setContentText(getString(R.string.copy_tweet))
                     .setContentIntent(openActivityPIntent)
                     .setSound(Settings.System.DEFAULT_NOTIFICATION_URI)
                     .setAutoCancel(true)
@@ -119,7 +119,7 @@ public class AutoListenService extends Service {
 
 
         mClipboard.addPrimaryClipChangedListener(listener);
-        Toast.makeText(context, "TwittaSave AutoListen Enabled", Toast.LENGTH_SHORT).show();
+        Toast.makeText(context, getString(R.string.autolist_enabl), Toast.LENGTH_SHORT).show();
 
 
         return super.onStartCommand(intent, flags, startId);
@@ -161,7 +161,7 @@ public class AutoListenService extends Service {
 
         if (mClipboard!=null && listener!=null){
             this.mClipboard.removePrimaryClipChangedListener(listener);
-            Toast.makeText(context, "TwittaSave AutoListen Disabled", Toast.LENGTH_SHORT).show();
+            Toast.makeText(context, getString(R.string.autolist_Disabled), Toast.LENGTH_SHORT).show();
 
         }
     }
