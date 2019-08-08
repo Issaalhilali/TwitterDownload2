@@ -26,6 +26,10 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.esafirm.rxdownloader.RxDownloader;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.InterstitialAd;
+import com.google.android.gms.ads.MobileAds;
 import com.issa.twitterdownload.receivers.AutoListenService;
 import com.issa.twitterdownload.utils.Constant;
 import com.twitter.sdk.android.Twitter;
@@ -50,6 +54,8 @@ public class MainActivity extends AppCompatActivity {
     private Switch swt_autolisten;
     private TextView txt_filename;
     private TextView txt_tweet_url;
+    private AdView mAdView;
+    private InterstitialAd interstitialAd;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,6 +63,19 @@ public class MainActivity extends AppCompatActivity {
         TwitterAuthConfig authConfig = new TwitterAuthConfig(Constant.TWITTER_KEY, Constant.TWITTER_SECRET);
         Fabric.with(this, new Twitter(authConfig));
         setContentView(R.layout.activity_main);
+
+        // ads banner
+        MobileAds.initialize(this,getString(R.string.admob_app_id));
+
+        mAdView = findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
+        //
+        //ads InterstitialAd
+        interstitialAd = new InterstitialAd(this);
+        interstitialAd.setAdUnitId(getString(R.string.Interstitial));
+        interstitialAd.loadAd(new AdRequest.Builder().build());
+
         sharedPreferences=this.getSharedPreferences("com.issa.twitterdownload", Context.MODE_PRIVATE);
 
         btn_download= findViewById(R.id.btn_download);
@@ -99,6 +118,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String fname;
+                if (interstitialAd.isLoaded()){
+                    interstitialAd.show();
+                }
 
                 //Check if the tweet url field has text containing twitter.com/...
                 if (txt_tweet_url.getText().length()>0 && txt_tweet_url.getText().toString().contains("twitter.com/")) {
@@ -323,7 +345,7 @@ public class MainActivity extends AppCompatActivity {
                         public void onClick(DialogInterface dialogInterface, int i) {
 
                             Intent intent=new Intent(Intent.ACTION_VIEW);
-                            intent.setData(Uri.parse("http://play.google.com/store/apps/details?id=com.kehinde.twittasave"));
+                            intent.setData(Uri.parse(""));
                             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                             startActivity(intent);
                         }
@@ -347,14 +369,20 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
 
         if (item.getItemId()==R.id.about){
+            if (interstitialAd.isLoaded()){
+                interstitialAd.show();
+            }
             startActivity(new Intent(this,AboutActivity.class));
         }
         if (item.getItemId()==R.id.web){
+            if (interstitialAd.isLoaded()){
+                interstitialAd.show();
+            }
 
             Intent share = new Intent();
             share.setType("text/plain");
             share.setAction(Intent.ACTION_SEND);
-            String appLink = "https://play.google.com/store/apps/details?id=com.issa.animeslyders";
+            String appLink = "";
             share.putExtra(Intent.EXTRA_TEXT,getString(R.string.subject) + appLink);
             startActivity(Intent.createChooser(share,"share via"));
 

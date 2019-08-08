@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     tools:context=".AboutActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
 
     <LinearLayout
@@ -25,7 +28,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="What it does?"
+            android:text="@string/what_it_does"
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2"
             android:layout_marginTop="20dp"
             android:textSize="16sp"
@@ -43,7 +46,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="How to use?"
+            android:text="@string/how_to_use"
             android:textSize="16sp"
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2"
             android:layout_marginTop="20dp"
@@ -57,7 +60,7 @@
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2"
             android:layout_marginTop="12dp"
             android:lineSpacingExtra="6dp"
-            android:text="Method 1: "/>
+            android:text="@string/method_1"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -76,7 +79,7 @@
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2"
             android:layout_marginTop="12dp"
             android:lineSpacingExtra="6dp"
-            android:text="Method 2: "/>
+            android:text="@string/method_2"/>
 
 
         <TextView
@@ -96,7 +99,7 @@
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2"
             android:layout_marginTop="12dp"
             android:lineSpacingExtra="6dp"
-            android:text="Method 3: "/>
+            android:text="@string/method_3"/>
 
 
         <TextView
@@ -111,7 +114,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Developed by:"
+            android:text="@string/developed_by"
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2"
             android:layout_marginTop="20dp"
             android:textSize="16sp"
@@ -128,6 +131,11 @@
             android:lineSpacingExtra="6dp"
             android:text="@string/emmanuel_kehinde"/>
     </LinearLayout>
+    </ScrollView>
 
+    <include
+        layout="@layout/ads"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
-</ScrollView>
+</RelativeLayout>
