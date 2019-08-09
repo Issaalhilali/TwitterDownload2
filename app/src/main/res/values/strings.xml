@@ -37,15 +37,15 @@
     <string name="autolist_Disabled">App AutoListen Disabled</string>
 
     // ads
-    <string name="admob_app_id">ca-app-pub-4928950783655706~9415029906</string>
-    <string name="banner_ad">ca-app-pub-3940256099942544/6300978111</string>
-    <string name="Interstitial">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="admob_app_id">ca-app-pub-4928950783655706~1546569165</string>
+    <string name="banner_ad">ca-app-pub-4928950783655706/9141261804</string>
+    <string name="Interstitial">ca-app-pub-4928950783655706/2715454258</string>
     <string name="developed_by">Developed by:</string>
     <string name="method_3">Method 3:</string>
     <string name="method_2">Method 2:</string>
     <string name="method_1">Method 1:</string>
     <string name="how_to_use">How to use?</string>
     <string name="what_it_does">What it does?</string>
-    <string name="banner_ad2">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="banner_ad2">ca-app-pub-4928950783655706/2967462049</string>
     <string name="about1">About</string>
 </resources>

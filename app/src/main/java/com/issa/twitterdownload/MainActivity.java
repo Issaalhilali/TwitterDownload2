@@ -345,7 +345,7 @@ public class MainActivity extends AppCompatActivity {
                         public void onClick(DialogInterface dialogInterface, int i) {
 
                             Intent intent=new Intent(Intent.ACTION_VIEW);
-                            intent.setData(Uri.parse(""));
+                            intent.setData(Uri.parse("https://play.google.com/store/apps/details?id=com.issa.twitterdownload"));
                             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                             startActivity(intent);
                         }
@@ -382,7 +382,7 @@ public class MainActivity extends AppCompatActivity {
             Intent share = new Intent();
             share.setType("text/plain");
             share.setAction(Intent.ACTION_SEND);
-            String appLink = "";
+            String appLink = "https://play.google.com/store/apps/details?id=com.issa.twitterdownload";
             share.putExtra(Intent.EXTRA_TEXT,getString(R.string.subject) + appLink);
             startActivity(Intent.createChooser(share,"share via"));
 

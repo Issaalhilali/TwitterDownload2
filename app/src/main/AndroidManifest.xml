@@ -19,7 +19,7 @@
         <activity android:name=".MainActivity">
             <meta-data
                 android:name="com.google.android.gms.ads.APPLICATION_ID"
-                android:value="ca-app-pub-4928950783655706~9415029906"/>
+                android:value="ca-app-pub-4928950783655706~1546569165"/>
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
