@@ -10,7 +10,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:463997779686:android:0fabb6bfd6a6c6a4",
         "android_client_info": {
-          "package_name": "com.issa.twitterdownload"
+          "package_name": "com.issa.twitterdownloadgif"
         }
       },
       "oauth_client": [
@@ -18,7 +18,7 @@
           "client_id": "463997779686-fcfj0qmivlrkvjjh0g0bh18bqa8staqn.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.issa.twitterdownload",
+            "package_name": "com.issa.twitterdownloadgif",
             "certificate_hash": "46f5d5b989103025f850b77dad6d4971af3dfa2e"
           }
         },

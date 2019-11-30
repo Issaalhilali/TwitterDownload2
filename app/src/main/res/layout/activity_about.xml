@@ -1,141 +1,116 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    tools:context=".AboutActivity">
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+    android:layout_height="match_parent"
+    android:layout_marginStart="8sp"
+    android:layout_marginTop="8sp"
+    android:layout_marginEnd="8sp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/what_it_does"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2"
+        android:layout_marginTop="20dp"
+        android:textSize="16sp"
+        android:textColor="#111"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="#444"
+        android:lineSpacingExtra="6dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/about"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/how_to_use"
+        android:textSize="16sp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2"
+        android:layout_marginTop="20dp"
+        android:textColor="#111"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="#222"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2"
+        android:layout_marginTop="12dp"
+        android:lineSpacingExtra="6dp"
+        android:text="@string/method_1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="#444"
+        android:layout_marginTop="8dp"
+        android:lineSpacingExtra="6dp"
+        android:text="@string/_1_copy_the_tweet_url"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="#222"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2"
+        android:layout_marginTop="12dp"
+        android:lineSpacingExtra="6dp"
+        android:text="@string/method_2"/>
 
 
-    <LinearLayout
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="#444"
+        android:layout_marginTop="8dp"
+        android:lineSpacingExtra="6dp"
+        android:text="@string/enable_autolisten"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="#222"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2"
+        android:layout_marginTop="12dp"
+        android:lineSpacingExtra="6dp"
+        android:text="@string/method_3"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="#444"
+        android:layout_marginTop="8dp"
+        android:lineSpacingExtra="6dp"
+        android:text="@string/select_share"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/developed_by"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2"
+        android:layout_marginTop="20dp"
+        android:textSize="16sp"
+        android:textColor="#111"/>
+
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
+        android:textSize="14sp"
         android:paddingTop="16dp"
+        android:id="@+id/txt_link"
         android:paddingBottom="16dp"
-        android:paddingLeft="12dp"
-        android:paddingRight="12dp">
+        android:textColor="@color/colorPrimary"
+        android:lineSpacingExtra="6dp"
+        android:text="@string/emmanuel_kehinde"/>
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:layout_gravity="center_horizontal"
-            android:src="@drawable/logo"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/what_it_does"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2"
-            android:layout_marginTop="20dp"
-            android:textSize="16sp"
-            android:textColor="#111"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="14sp"
-            android:textColor="#444"
-            android:lineSpacingExtra="6dp"
-            android:layout_marginTop="8dp"
-            android:text="@string/about"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/how_to_use"
-            android:textSize="16sp"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2"
-            android:layout_marginTop="20dp"
-            android:textColor="#111"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="14sp"
-            android:textColor="#222"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2"
-            android:layout_marginTop="12dp"
-            android:lineSpacingExtra="6dp"
-            android:text="@string/method_1"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="14sp"
-            android:textColor="#444"
-            android:layout_marginTop="8dp"
-            android:lineSpacingExtra="6dp"
-            android:text="@string/_1_copy_the_tweet_url"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="14sp"
-            android:textColor="#222"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2"
-            android:layout_marginTop="12dp"
-            android:lineSpacingExtra="6dp"
-            android:text="@string/method_2"/>
-
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="14sp"
-            android:textColor="#444"
-            android:layout_marginTop="8dp"
-            android:lineSpacingExtra="6dp"
-            android:text="@string/enable_autolisten"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="14sp"
-            android:textColor="#222"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2"
-            android:layout_marginTop="12dp"
-            android:lineSpacingExtra="6dp"
-            android:text="@string/method_3"/>
-
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="14sp"
-            android:textColor="#444"
-            android:layout_marginTop="8dp"
-            android:lineSpacingExtra="6dp"
-            android:text="@string/select_share"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/developed_by"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2"
-            android:layout_marginTop="20dp"
-            android:textSize="16sp"
-            android:textColor="#111"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="14sp"
-            android:paddingTop="16dp"
-            android:id="@+id/txt_link"
-            android:paddingBottom="16dp"
-            android:textColor="@color/colorPrimary"
-            android:lineSpacingExtra="6dp"
-            android:text="@string/emmanuel_kehinde"/>
-    </LinearLayout>
-    </ScrollView>
-
-    <include
-        layout="@layout/ads"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-
-</RelativeLayout>
+</LinearLayout>

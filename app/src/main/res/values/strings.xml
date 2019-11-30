@@ -27,7 +27,7 @@
     <string name="fetch_gif">Fetching gif...</string>
     <string name="share">share app</string>
     <string name="problem">Report a problem</string>
-    <string name="subject">Share app with your friends</string>
+    <string name="subject">Share app with your friends :</string>
     <string name="url_entered">The url entered contains no video or gif file</string>
     <string name="url_entered_media">The url entered contains no media file</string>
     <string name="enetrcorrent">Enter a correct tweet url</string>

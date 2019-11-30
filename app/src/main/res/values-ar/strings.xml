@@ -28,8 +28,8 @@
     <string name="fetch_gif">جار جلب الصورة المتحركة GIF...</string>
     <string name="share">شارك التطبيق</string>
     <string name="problem">Report a problem</string>
-    <string name="subject"> لتحميل الفيديوهات و الصور المتحركة من اتطيبق تويتر يمكن تحميل التطبيق
-        و الاستمتاع</string>
+    <string name="subject"> لتحميل الفيديوهات و الصور المتحركة من تويتر يمكن تحميل التطبيق
+        والاستمتاع :</string>
     <string name="url_entered">لا يحتوي عنوان الرابط الذي تم ادخاله على ملف فيديو او ملف
         gif</string>
     <string name="url_entered_media">عنوان الرابط الذي تم ادخاله لا يحتوي على ملف وسائط</string>

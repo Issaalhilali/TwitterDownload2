@@ -4,7 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/black"
     tools:context=".MainActivity">
+
+
+    <include
+        layout="@layout/gif"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -12,6 +17,7 @@
         android:orientation="vertical"
         android:layout_gravity="center"
         android:gravity="center"
+        android:background="@android:color/transparent"
         android:focusable="true"
         android:layout_marginTop="100dp"
         android:focusableInTouchMode="true"
@@ -20,41 +26,50 @@
         android:paddingStart="16dp"
         android:paddingEnd="16dp">
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+
+        <TextView
+            android:layout_width="308dp"
+            android:layout_height="125dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="50dp"
-            android:src="@drawable/logo"
+            android:text="SaveTwite"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="50dp"
+            android:gravity="center"
+            android:background="@android:color/transparent"
             tools:ignore="ContentDescription" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColorHint="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimary1"
             android:layout_marginBottom="2dp">
+
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
                 android:hint="@string/tweet_url"
-                android:textColorHint="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary1"
                 android:id="@+id/txt_tweet_url"
                 android:inputType="textUri"
+                android:textStyle="bold"
                 tools:ignore="Autofill" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColorHint="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimary1"
             android:layout_marginBottom="5dp">
 
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
-                android:textColorHint="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary1"
                 android:hint="@string/filename_optional"
                 android:id="@+id/txt_filename"
+                android:textStyle="bold"
                 tools:ignore="TextFields" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -79,6 +94,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
+            android:background="@android:color/white"
             android:shadowColor="@color/green"/>
 
         <TextView
@@ -86,6 +102,8 @@
             android:layout_height="wrap_content"
             android:textAlignment="center"
             android:layout_marginTop="8dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
             android:text="@string/enable_disable_autolisten"/>
     </LinearLayout>
 

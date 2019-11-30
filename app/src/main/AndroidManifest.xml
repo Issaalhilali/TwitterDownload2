@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.issa.twitterdownload">
+    package="com.issa.twitterdownloadgif">
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
@@ -19,7 +19,7 @@
         <activity android:name=".MainActivity">
             <meta-data
                 android:name="com.google.android.gms.ads.APPLICATION_ID"
-                android:value="ca-app-pub-4928950783655706~1546569165"/>
+                android:value="ca-app-pub-4928950783655706~7652983293"/>
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -1,4 +1,4 @@
-package com.issa.twitterdownload;
+package com.issa.twitterdownloadgif;
 
 import org.junit.Test;
 
